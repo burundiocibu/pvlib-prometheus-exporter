@@ -25,9 +25,9 @@ setup(
     url=about['__url__'],
     packages=['ping-exporter'],
     include_package_data=True,
-    python_requires=">=3.7.*",
+    python_requires=">=3.9.*",
     install_requires=[
-        'ping3',
+        'pvlib',
         'prometheus_client'],
     license=about['__license__'],
     zip_safe=False,
@@ -37,7 +37,7 @@ setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.9',
     ],
     keywords='package development template'
 )
