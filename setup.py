@@ -5,7 +5,7 @@ from setuptools import setup
 
 about = {}  # type: ignore
 here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, 'envoy_logger', '__version__.py')) as f:
+with open(os.path.join(here, 'pvlib-prometheus-exporter', '__version__.py')) as f:
     exec(f.read(), about)
 
 # load the README file and use it as the long_description for PyPI
@@ -23,7 +23,7 @@ setup(
     author=about['__author__'],
     author_email=about['__author_email__'],
     url=about['__url__'],
-    packages=['ping-exporter'],
+    packages=['pvlib-prometheus-exporter'],
     include_package_data=True,
     python_requires=">=3.9.*",
     install_requires=[
@@ -32,12 +32,12 @@ setup(
     license=about['__license__'],
     zip_safe=False,
     entry_points={
-        'console_scripts': ['ping-exporter=ping-exporter.ping-exporter:main'],
+        'console_scripts': ['pvlib-prometheus-exporter=pvlib-prometheus-exporter.pvlib-prometheus-exporter:main'],
     },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 3.9',
     ],
-    keywords='package development template'
+    keywords='IoT,promeheus,solar'
 )

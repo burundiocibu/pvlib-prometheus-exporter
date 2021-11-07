@@ -1,5 +1,6 @@
-# rt-pv-model
-A Prometheus exporter for available solar radiance at a given location.
+# pvlib-prometheus-exporter
+A Prometheus exporter for various items computed by pvlib at a given location.
+Note that this is both a promethus client and exporter
 
 * https://pypi.org/project/pvlib/
 * https://pvlib-python.readthedocs.io/en/latest/
@@ -22,7 +23,11 @@ metrics to output:
 Power reported in W/m^2
 
 
-# using osx system python3:
-pip3 install pipenv
-cd ~/git/rt-pv-model
-pipenv install --no-site-packages jupyter pvlib prometheus-client
+# development environment
+using the system python3
+``` bash
+cd ~/git/pvlib-prometheus-exporter
+virtualenv -p python3 .venv
+source .venv
+pip install pvlib prometheus-client
+```
