@@ -30,4 +30,5 @@ cd ~/git/pvlib-prometheus-exporter
 virtualenv -p python3 .venv
 source .venv
 pip install pvlib prometheus-client
+pip install matplotlib PyQT5
 ```
